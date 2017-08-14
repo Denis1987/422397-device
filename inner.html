@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+
+    <header class="device_header">
+        <div class="device_center">
+            <a class="logo" href="index.html">
+                    DEVICE
+                </a>
+            <form class="search_form" action="#" method="post">
+                <input class="search_form" type="search" name="search" placeholder="Поиск по сайту">
+                <input type="submit" name="submit" value="Найти">
+            </form>
+            <div class="user_block">
+                <a class="enter" href="#">Валентин Петухов</a>
+                <a class="exit" href="#">Выйти</a>
+                <a class="basket" href="#">Корзина</a>
+                <a class="compare" href="#">Сравнить</a>
+            </div>
+            <nav class="main_nav">
+                <ul class="nav_list">
+                    <li> <a class="device_catalog" href="#">Каталог товаров</a>
+                        <ul class="catalog_inside">
+                            <li><a href="#">Виртуальная реальность</a></li>
+                            <li><a href="#">Фитнесс-браслеты</a></li>
+                            <li><a href="#">Квадрокоптеры</a></li>
+                            <li><a href="#">Моноподы для селфи</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Экшн-камеры</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="main_items" href="#">Доставка</a></li>
+                    <li><a class="main_items" href="#">Гарантия</a></li>
+                    <li><a class="main_items" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="device_main">
+
+        <section class="inner_catalog">
+            <h2>Моноподы для селфи</h2>
+            <ul class="bread_crumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </section>
+
+        <section class="content_title">
+            
+        </section>
+        <section class="inner_content">
+            <div class="content_central">
+                <div class="catalog_filter">
+                    <h2>ФИЛЬТР:</h2>
+                    <form class="filter_form" method="post" action="#">
+                        <fieldset>
+                            <legend class="inner_legend_form">Стоимость</legend>
+                            <div class="range"></div>
+                            <div class="filter_price">
+                                <span>от 0</span>
+                                <span>до 500</span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="form_legend">Цвет</legend>
+                            <input class="filter_checkbox" type="checkbox" name="black" id="black" checked>
+                            <label for="black">Черный</label>
+                            <input class="filter_checkbox" type="checkbox" name="white" id="white">
+                            <label for="white">Белый</label>
+                            <input class="filter_checkbox" type="checkbox" name="blue" id="blue" checked>
+                            <label for="blue">Синий</label>
+                            <input class="filter_checkbox" type="checkbox" name="red" id="red" checked>
+                            <label for="red">Красный</label>
+                            <input class="filter_checkbox" type="checkbox" name="pink" id="pink">
+                            <label for="pink">Розовый</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="form_legend">Bluetooth</legend>
+                            <input class="filter_radio" type="radio" value="Есть" name="bluetooth" id="bth_yes" checked>
+                            <label for="bth_yes">Есть</label>
+                            <input class="filter_radio" type="radio" value="Нет" name="bluetooth" id="bth_no">
+                            <label for="bth_no">Нет</label>
+                        </fieldset>
+                        <button class="inner_form_btn btn" type="submit">показать</button>
+                    </form>
+                </div>
+                <div class="catalog_items">
+                    <section class="central">
+
+                        <div class="menu varieties">
+                            <h2>СОРТИРОВКА:</h2>
+                            <div class="inner_items">
+                                <a href="#">По цене</a>
+                                <a href="#">По типу</a>
+                                <a href="#">По популярности</a>
+                            </div>
+                        </div>
+                        <div class="central_btn">
+                            <a href="btn_up"></a>
+                            <a href="btn_down"></a>
+                        </div>
+                    </section>
+                    <div class="inner_main_items">
+                        <article class="goods">
+                            <img class="goods_img" src="#">
+                            <div class="hover_surprise">
+                                <a class="hover_surprise_buy" href="#">В корзину</a>
+                                <a class="hover_surprise_compare" href="#">Добавить к сравнению</a>
+                            </div>
+                            <a class="goods_name" href="#">Любительская селфи-палка</a>
+                            <span>500 руб.</span>
+                        </article>
+                        <article class="goods"> <img class="goods_img" src="#">
+                            <div class="hover_surprise">
+                                <a class="hover_surprise_buy btn" href="#">В корзину</a>
+                                <a class="hover_surprise_compare" href="#">Добавить к сравнению</a>
+                            </div>
+                            <a class="goods_name" href="#">Профессиональная
+                                селфи-палка</a>
+                            <span>1 500 руб</span></article>
+                        <article class="goods"> <img class="goods_img" src="#">
+                            <div class="hover_surprise">
+                                <a class="hover_surprise_buy btn" href="#">В корзину</a>
+                                <a class="hover_surprise_compare" href="#">Добавить к сравнению</a>
+                            </div>
+                            <a class="goods_name" href="#">Непотопляемая селфи-палка </a>
+                            <span>2 500 руб.</span></article>
+                        <article class="goods"> <img class="goods_img" src="#">
+                            <div class="hover_surprise">
+                                <a class="hover_surprise_buy btn" href="#">В корзину</a>
+                                <a class="hover_surprise_compare" href="#">Добавить к сравнению</a>
+                            </div>
+                            <a class="goods_name btn" href="#">Селфи-палка
+                                «Следуй за мной»</a>
+                            <span>4 900 руб.</span></article>
+                    </div>
+                    <ul class="catalog_items_nav">
+                        <li class="catalog_items_prev"><a class="prev_next" href="#">НАЗАД</a></li>
+                    <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="catalog_items_next"><a class="prev_next" href="#">ВПЕРЕД</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="device_footer">
+        <div class="footer_conteiner">
+            <div class="left">
+                <a class="footer_logo"></a>
+                <p>г. Москва, ул. Строителей, 15</p>
+            </div>
+            <div class="center">
+                <div class="footer_options">
+                    <a href="#">ДОСТАВКА</a>
+                    <a href="#">ГАРАНТИЯ</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </div>
+                <div class="footer_social">
+                    <a class="facebook" href="#"></a>
+                    <a class="instagram" href="#"></a>
+                    <a class="twitter" href="#"></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="user_block_footer">
+                    <a class="footer_link footer_enter" href="#">Войти</a>
+                    <a class="footer_link footer_compare" href="#">Сравнить</a>
+                    <a class="footer_link footer_basket" href="#">Корзина</a>
+                </div>
+                <div class="tel">Тел.: +7 (495) 495-95-95</div>
+                <div class="Academy">
+                    <a href="https://htmlacademy.ru/"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
