@@ -1,0 +1,16 @@
+
+body {
+    min-width: 1240px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: "Gilroy ExtraBold","Open Sans Light","Arial",sans-serif;
+    color: #000000;
+    
+}
+.subtitle {
+    font-size: 47px;
+    color: #000000;
+    line-height: 47px;
+    font-family: "Gilroy ExtraBold","Open Sans Light","Arial",sans-serif;
+}
