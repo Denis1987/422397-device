@@ -1,4 +1,17 @@
-
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url ('../fonts/Gilroyextrabold.ttf')
+    format('ttf'),
+        src: url ('../fonts/Gilroylight.ttf')
+        format('ttf');
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url ('../fonts/OpenSans-Light.ttf')
+        format('ttf'),
+        src: url ('../fonts/OpenSans-Regular.ttf')
+        format('ttf');
+}
 body {
     min-width: 1240px;
     font-weight: 400;
