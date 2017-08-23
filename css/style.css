@@ -1,29 +1,528 @@
 @font-face {
     font-family: 'Gilroy ExtraBold';
-    src: url ('../fonts/Gilroyextrabold.ttf')
-    format('ttf'),
-        src: url ('../fonts/Gilroylight.ttf')
-        format('ttf');
+    src: url ('../fonts/Gilroyextrabold.ttf') format('ttf'), src: url ('../fonts/Gilroylight.ttf') format('ttf');
 }
+
 @font-face {
     font-family: 'Open Sans Light';
-    src: url ('../fonts/OpenSans-Light.ttf')
-        format('ttf'),
-        src: url ('../fonts/OpenSans-Regular.ttf')
-        format('ttf');
+    src: url ('../fonts/OpenSans-Light.ttf') format('ttf'), src: url ('../fonts/OpenSans-Regular.ttf') format('ttf');
 }
+
 body {
     min-width: 1240px;
+    outline: 1px solid #8AB547;
     font-weight: 400;
     font-size: 15px;
     line-height: 15px;
-    font-family: "Gilroy ExtraBold","Open Sans Light","Arial",sans-serif;
+    font-family: "Gilroy ExtraBold", "Open Sans Light", "Arial", sans-serif;
     color: #000000;
-    
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
 }
+
 .subtitle {
     font-size: 47px;
     color: #000000;
     line-height: 47px;
-    font-family: "Gilroy ExtraBold","Open Sans Light","Arial",sans-serif;
+    font-family: "Gilroy ExtraBold", "Open Sans Light", "Arial", sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.index_header,
+.device_header {
+    outline: 1px solid #8AB547;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7e296;
+    height: 298px;
+    /* временная высота*/
+}
+
+.index_center,
+.device_center {
+    padding-left: 60px;
+    padding-right: 60px;
+    outline: 1px solid #8AB547;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 35px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 48px;
+    line-height: 48px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    letter-spacing: .01em;
+    font-weight: bold;
+    outline: 1px solid #8AB547;
+    position: absolute;
+    top: -25px;
+}
+
+.search_form_header {
+    outline: 1px solid #8AB547;
+    width: 500px;
+    display: flex;
+}
+
+.user_block {
+    outline: 1px solid #8AB547;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_block a {
+    font-size: 15px;
+    color: black;
+    line-height: 36px;
+    outline: 1px solid #8AB547;
+}
+
+.main_nav {
+    outline: 1px solid #8AB547;
+    display: flex;
+    width: 100%;
+}
+
+.nav_list {
+    outline: 1px solid #8AB547;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.nav_list li {
+    list-style: none;
+    outline: 1px solid #8AB547;
+}
+
+.index_header a,
+.device_header a {
+    text-decoration: none;
+    outline: 1px solid #8AB547;
+}
+
+.nav_list .main_items,
+.index_catalog,
+.device_catalog {
+    font-size: 18px;
+    line-height: 19px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bold;
+}
+
+.device_center .logo {
+    color: black;
+}
+
+.nav_list>li:last-child {
+    margin-left: 89px;
+}
+
+.nav_list>li:first-child {
+    margin-right: auto;
+}
+
+.nav_list>li:nth-child(2) {
+    margin-right: 30px;
+}
+
+.catalog_inside a {
+    font-size: 15px;
+    line-height: 36px;
+    color: black;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
+
+.btn {
+    font-size: 18px;
+    line-height: 18px;
+    color: black;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.catalog_inside {
+    position: absolute;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    margin-top: 16px;
+    /*    display: none;*/
+}
+
+.catalog_inside li {
+    margin-right: 68px;
+}
+
+.catalog_inside li:nth-child(3) {
+    margin-right: 0;
+}
+
+.catalog_inside li:nth-child(4) {
+    margin-right: 90px;
+}
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+}
+
+.first_slide,
+.second_slide,
+.third_slide {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.first_slide,
+.second_slide,
+.third_slide {
+    outline: 1px solid #8AB547;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .subtitle {
+    font-weight: bold;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
+
+.slide_number {
+    position: absolute;
+    font-weight: bold;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    display: none;
+    /*временно*/
+}
+
+.main_description {
+    position: relative;
+    outline: 1px solid #8AB547;
+    flex-basis: 511px;
+}
+
+.slider img {
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.first_slide img {
+    margin-left: 29px;
+}
+
+.subtitle {
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.main_description p {
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.main_description a {
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.main_description ul {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.difference li {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    flex-direction: column;
+}
+
+.first_difference {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.second_difference {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.assortment {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.assortment_type_block {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.assortment_type_block img {
+    background-color: #f7e296;
+    margin-bottom: 35px;
+}
+
+.assortment a {
+    text-decoration: none;
+}
+
+.service {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_guarantee {
+    display: none;
+    /*временно*/
+}
+
+.service_loan {
+    display: none;
+    /*временно*/
+}
+
+.container {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    flex-basis: 300px;
+    display: flex;
+}
+
+.service_info {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    flex-basis: 760px;
+}
+
+.service_info p {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    font-size: 15px;
+    line-height: 30px;
+    width: 460px;
+}
+
+.services {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    list-style: none;
+    padding: 0;
+}
+
+.services a {
+    text-decoration: none;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    color: black;
+    font-size: 18px;
+    line-height: 18px;
+    width: 260px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 26px;
+    background-color: red;
+    /*временно*/
+}
+
+.advertising {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.device_footer {
+    outline: 1px solid #8AB547;
+    /*временно*/
+    background-color: #464646;
+}
+
+.inner_catalog {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+    display: flex;
+    flex-direction: column;
+}
+
+.bread_crumbs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.bread_crumbs li {
+    margin-right: 20px;
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.bread_crumbs a {
+    text-decoration: none;
+    color: black;
+    outline: 1px solid #8AB547;
+    /*временно*/
+}
+
+.content_central {
+    outline: 1px solid #8AB547;
+    display: flex;
+}
+
+.catalog_filter {
+    outline: 1px solid #8AB547;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #eeeeee;
+}
+
+.catalog_items {
+    outline: 1px solid #8AB547;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_varieties {
+    display: flex;
+    width: 835px;
+    outline: 1px solid #8AB547;
+    background-color: #eeeeee;
+}
+
+.goods {
+    outline: 1px solid #8AB547;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_content {
+    outline: 1px solid #8AB547;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+}
+
+.filter_form {
+    width: 200px;
+    margin-left: 60px;
+    margin-right: 65px;
+}
+
+.catalog_filter h2 {
+    background-color: #dcdcdc;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding-bottom: 10px;
+    /*временно*/
+    padding-top: 10px;
+    /*временно*/
+}
+
+.inner_main_items {
+    display: flex;
+    outline: 1px solid #8AB547;
+    flex-wrap: wrap;
+}
+
+.hover_surprise {
+    display: none;
+}
+.catalog_items_nav {
+    outline: 1px solid #8AB547;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.catalog_items_prev {
+   
+    margin-right: auto;
+}
+.catalog_items_next {
+   margin-left: auto;
 }
