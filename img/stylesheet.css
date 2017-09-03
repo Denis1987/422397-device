@@ -10,308 +10,128 @@
     background-position: -20px -20px;
 }
 
-.sprite-bracelet_click {
-    width: 107px;
-    height: 65px;
-    background-position: -167px -20px;
-}
-
 .sprite-camera {
     width: 71px;
     height: 87px;
-    background-position: -314px -20px;
-}
-
-.sprite-camera_click {
-    width: 71px;
-    height: 87px;
-    background-position: -425px -20px;
+    background-position: -167px -20px;
 }
 
 .sprite-cart_footer {
     width: 12px;
     height: 12px;
-    background-position: -536px -20px;
-}
-
-.sprite-cart_footer_click {
-    width: 12px;
-    height: 12px;
-    background-position: -588px -20px;
-}
-
-.sprite-cart_footer_hover {
-    width: 12px;
-    height: 12px;
-    background-position: -640px -20px;
+    background-position: -278px -20px;
 }
 
 .sprite-cart_top {
     width: 12px;
     height: 12px;
-    background-position: -692px -20px;
-}
-
-.sprite-cart_top_click {
-    width: 12px;
-    height: 12px;
-    background-position: -744px -20px;
+    background-position: -330px -20px;
 }
 
 .sprite-compare {
     width: 10px;
     height: 10px;
-    background-position: -796px -20px;
-}
-
-.sprite-compare_click {
-    width: 10px;
-    height: 10px;
-    background-position: -846px -20px;
+    background-position: -382px -20px;
 }
 
 .sprite-compare_footer {
     width: 10px;
     height: 10px;
-    background-position: -896px -20px;
-}
-
-.sprite-compare_footer_click {
-    width: 10px;
-    height: 10px;
-    background-position: -946px -20px;
-}
-
-.sprite-compare_footer_hover {
-    width: 10px;
-    height: 10px;
-    background-position: -996px -20px;
+    background-position: -432px -20px;
 }
 
 .sprite-credit {
     width: 156px;
     height: 186px;
-    background-position: -1046px -20px;
+    background-position: -482px -20px;
 }
 
 .sprite-delivery {
     width: 136px;
     height: 164px;
-    background-position: -1242px -20px;
+    background-position: -678px -20px;
 }
 
 .sprite-enter {
     width: 13px;
     height: 12px;
-    background-position: -1418px -20px;
+    background-position: -854px -20px;
 }
 
-.sprite-enter_click {
+.sprite-enter_footer {
     width: 13px;
     height: 12px;
-    background-position: -1471px -20px;
-}
-
-.sprite-enter_footer_click {
-    width: 13px;
-    height: 12px;
-    background-position: -1524px -20px;
-}
-
-.sprite-enter_footer_hover {
-    width: 13px;
-    height: 12px;
-    background-position: -1577px -20px;
-}
-
-.sprite-enter_futer {
-    width: 13px;
-    height: 12px;
-    background-position: -1630px -20px;
+    background-position: -907px -20px;
 }
 
 .sprite-facebook {
     width: 32px;
     height: 32px;
-    background-position: -1683px -20px;
-}
-
-.sprite-facebook_click {
-    width: 32px;
-    height: 32px;
-    background-position: -1755px -20px;
-}
-
-.sprite-facebook_hover {
-    width: 32px;
-    height: 32px;
-    background-position: -1827px -20px;
+    background-position: -960px -20px;
 }
 
 .sprite-glasses {
     width: 97px;
     height: 55px;
-    background-position: -1899px -20px;
-}
-
-.sprite-glasses_click {
-    width: 97px;
-    height: 55px;
-    background-position: -2036px -20px;
-}
-
-.sprite-icon_down {
-    width: 11px;
-    height: 10px;
-    background-position: -2173px -20px;
+    background-position: -1032px -20px;
 }
 
 .sprite-icon_down_click {
     width: 11px;
     height: 10px;
-    background-position: -2224px -20px;
-}
-
-.sprite-icon_down_hover {
-    width: 11px;
-    height: 10px;
-    background-position: -2275px -20px;
-}
-
-.sprite-icon_up {
-    width: 11px;
-    height: 10px;
-    background-position: -2326px -20px;
+    background-position: -1169px -20px;
 }
 
 .sprite-icon_up_click {
     width: 11px;
     height: 10px;
-    background-position: -2377px -20px;
-}
-
-.sprite-icon_up_hover {
-    width: 11px;
-    height: 10px;
-    background-position: -2428px -20px;
+    background-position: -1220px -20px;
 }
 
 .sprite-instagram {
     width: 32px;
     height: 32px;
-    background-position: -2479px -20px;
-}
-
-.sprite-instagram_click {
-    width: 32px;
-    height: 32px;
-    background-position: -2551px -20px;
-}
-
-.sprite-instagram_hover {
-    width: 32px;
-    height: 32px;
-    background-position: -2623px -20px;
+    background-position: -1271px -20px;
 }
 
 .sprite-logo_html {
     width: 27px;
     height: 35px;
-    background-position: -2695px -20px;
-}
-
-.sprite-logo_html_click {
-    width: 27px;
-    height: 35px;
-    background-position: -2762px -20px;
-}
-
-.sprite-logo_html_hover {
-    width: 27px;
-    height: 35px;
-    background-position: -2829px -20px;
+    background-position: -1343px -20px;
 }
 
 .sprite-quadcopter {
     width: 132px;
     height: 69px;
-    background-position: -2896px -20px;
-}
-
-.sprite-quadcopter_click {
-    width: 132px;
-    height: 69px;
-    background-position: -3068px -20px;
+    background-position: -1410px -20px;
 }
 
 .sprite-search {
     width: 16px;
     height: 16px;
-    background-position: -3240px -20px;
+    background-position: -1582px -20px;
 }
 
 .sprite-selfie_stick {
     width: 86px;
     height: 117px;
-    background-position: -3296px -20px;
-}
-
-.sprite-selfie_stick_click {
-    width: 86px;
-    height: 117px;
-    background-position: -3422px -20px;
-}
-
-.sprite-slider_1 {
-    width: 384px;
-    height: 486px;
-    background-position: -3548px -20px;
-}
-
-.sprite-slider_2 {
-    width: 345px;
-    height: 485px;
-    background-position: -3972px -20px;
-}
-
-.sprite-slider_3 {
-    width: 526px;
-    height: 334px;
-    background-position: -4357px -20px;
+    background-position: -1638px -20px;
 }
 
 .sprite-smart_watch {
     width: 56px;
     height: 98px;
-    background-position: -4923px -20px;
-}
-
-.sprite-smart_watch_click {
-    width: 56px;
-    height: 98px;
-    background-position: -5019px -20px;
+    background-position: -1764px -20px;
 }
 
 .sprite-twitter {
     width: 32px;
     height: 32px;
-    background-position: -5115px -20px;
-}
-
-.sprite-twitter_click {
-    width: 32px;
-    height: 32px;
-    background-position: -5187px -20px;
-}
-
-.sprite-twitter_hover {
-    width: 32px;
-    height: 32px;
-    background-position: -5259px -20px;
+    background-position: -1860px -20px;
 }
 
 .sprite-warranty {
     width: 171px;
     height: 194px;
-    background-position: -5331px -20px;
+    background-position: -1932px -20px;
 }
