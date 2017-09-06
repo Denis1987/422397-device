@@ -61,18 +61,22 @@
         <section class="slider">
             <ul class="slider_btn">
                 <li>
-                    <a class="slider_btn_1" href="#">
-                        <img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn">
-                    </a>
+                    <button class="slider_btn_1 circle_btn">
+<!--                        <img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn">-->
+                    </button>
                 </li>
                 <li>
-                    <a class="slider_btn_2" href="#"><img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn"></a>
+                    <button class="slider_btn_2 circle_btn">
+<!--                        <img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn">-->
+                    </button>
                 </li>
                 <li>
-                    <a class="slider_btn_3" href="#"><img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn"></a>
+                    <button class="slider_btn_3 circle_btn">
+<!--                        <img src="img/svg-device/slider-button-empty.svg" width="12" height="12" alt="slider_btn">-->
+                    </button>
                 </li>
             </ul>
-            <section class="first_slide">
+            <section class="first_slide slide_hidden">
                 <img src="img/slider_1.png" width="384" height="486" alt="палка для селфи">
                 <div class="main_description">
                     <span class="slide_number">01</span>
@@ -103,7 +107,7 @@
                 </div>
             </section>
 
-            <section class="second_slide">
+            <section class="second_slide slide_hidden">
 
                 <img src="img/slider_2.png" width="345" height="485" alt="фитнесc-браслет">
                 <div class="main_description">
@@ -125,7 +129,7 @@
 
             </section>
 
-            <section class="third_slide">
+            <section class="third_slide slide_hidden">
                 <img src="img/slider_3.png" width="526" height="334" alt="квадрокоптер">
                 <div class="main_description">
                     <span class="slide_number">03</span>
@@ -367,6 +371,10 @@
         </label>
         </form>
     </div>
+    <div class="popup_map">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.2020298977036!2d37.530936265657935!3d55.685475230535395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbce6da52bb328417!2z0KjQutC-0LvQsCDQntCx0YnQtdC-0LHRgNCw0LfQvtCy0LDRgtC10LvRjNC90LDRjyDihJYgMTE4ICwg0JPQntCj!5e0!3m2!1sru!2sru!4v1504716722629" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <script>
         "use strict";
 
@@ -378,14 +386,67 @@
         var linkSubmit = document.querySelector(".search_submit");
 
         linkForm.addEventListener("focus", function(evt) {
-            evt.preventDefault();
             linkInput.classList.add("search_form_header_show");
-        });
-        linkForm.addEventListener("focus", function(evt) {
-            evt.preventDefault();
             linkSubmit.classList.add("search_submit_show");
         });
 
+
+//        var firstBtn = document.querySelector(".slider_btn_1");
+//        var secondBtn = document.querySelector(".slider_btn_2");
+//        var thirdBtn = document.querySelector(".slider_btn_3");
+//        var firstSlide = document.querySelector(".first_slide");
+//        var secondSlide = document.querySelector(".second_slide");
+//        var thirdSlide = document.querySelector(".third_slide");
+//
+//        firstSlide.classList.add("first_slide_show");
+//
+//        firstBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            firstSlide.classList.add("first_slide_show");
+//              secondSlide.classList.remove("second_slide_show");
+//              thirdSlide.classList.remove("third_slide_show");
+//        });
+//        firstBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            secondSlide.classList.remove("second_slide_show");
+//        });
+//        firstBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            thirdSlide.classList.remove("third_slide_show");
+//        });
+//
+//
+//
+//        secondBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            secondSlide.classList.add("second_slide_show");
+//        });
+//        secondBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            firstSlide.classList.remove("first_slide_show");
+//        });
+//        secondBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            thirdSlide.classList.remove("third_slide_show");
+//        });
+//
+//
+//
+//
+//
+//        thirdBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            thirdSlide.classList.add("third_slide_show");
+//        });
+//        thirdBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            secondSlide.classList.remove("second_slide_show");
+//        });
+//        thirdBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            firstSlide.classList.remove("first_slide_show");
+//        });
+        
 
         var firstBtn = document.querySelector(".slider_btn_1");
         var secondBtn = document.querySelector(".slider_btn_2");
@@ -393,72 +454,114 @@
         var firstSlide = document.querySelector(".first_slide");
         var secondSlide = document.querySelector(".second_slide");
         var thirdSlide = document.querySelector(".third_slide");
-
-        firstSlide.classList.add("first_slide_show");
-
+        
+        firstSlide.classList.add("slide_hidden_show");
+        firstBtn.classList.add("circle_btn_here");
+        
         firstBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            firstSlide.classList.add("first_slide_show");
+            firstSlide.classList.add("slide_hidden_show");
+            secondSlide.classList.remove("slide_hidden_show");
+            thirdSlide.classList.remove("slide_hidden_show");
+            firstBtn.classList.add("circle_btn_here");
+            secondBtn.classList.remove("circle_btn_here");
+            thirdBtn.classList.remove("circle_btn_here");
         });
-        firstBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            secondSlide.classList.remove("second_slide_show");
-        });
-        firstBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            thirdSlide.classList.remove("third_slide_show");
-        });
-
-
-
+        
         secondBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            secondSlide.classList.add("second_slide_show");
+            secondSlide.classList.add("slide_hidden_show");
+            firstSlide.classList.remove("slide_hidden_show");
+            thirdSlide.classList.remove("slide_hidden_show");
+            firstBtn.classList.remove("circle_btn_here");
+            secondBtn.classList.add("circle_btn_here");
+            thirdBtn.classList.remove("circle_btn_here");
         });
-        secondBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            firstSlide.classList.remove("first_slide_show");
-        });
-        secondBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            thirdSlide.classList.remove("third_slide_show");
-        });
-
-
-
-
-
+        
         thirdBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            thirdBtn.classList.add("third_slide_show");
-        });
-        thirdBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            secondSlide.classList.remove("second_slide_show");
-        });
-        thirdBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            firstSlide.classList.remove("first_slide_show");
+            thirdSlide.classList.add("slide_hidden_show");
+            firstSlide.classList.remove("slide_hidden_show");
+            secondSlide.classList.remove("slide_hidden_show");
+            firstBtn.classList.remove("circle_btn_here");
+            secondBtn.classList.remove("circle_btn_here");
+            thirdBtn.classList.add("circle_btn_here");
         });
 
 
-        var deliveryBtn = document.querySelector(".delivery_display");
-        var guaranteeBtn = document.querySelector(".guarantee_display");
-        var loanBtn = document.querySelector(".loan_display");
-      
-        deliveryBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            deliveryBtn.classList.add("delivery_display_show");
-        });
-        deliveryBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            guaranteeBtn.classList.remove("guarantee_display_show");
-        });
-        deliveryBtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            loanBtn.classList.remove("loan_display_show");
-        });
+//        var deliveryBtn = document.querySelector(".delivery_display");
+//        var guaranteeBtn = document.querySelector(".guarantee_display");
+//        var loanBtn = document.querySelector(".loan_display");
+//      
+//        deliveryBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            deliveryBtn.classList.add("delivery_display_show");
+//        });
+//        deliveryBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            guaranteeBtn.classList.remove("guarantee_display_show");
+//        });
+//        deliveryBtn.addEventListener("click", function(evt) {
+//            evt.preventDefault();
+//            loanBtn.classList.remove("loan_display_show");
+//        });
+        
+        var mapBtn = document.querySelector(".map");
+        var popupMap = document.querySelector(".popup_map");
 
+        mapBtn.addEventListener("click", function(evt) {
+            popupMap.classList.add("popup_map_show");
+        });
+        
+        var writeToUs = document.querySelector(".write_to_us");
+        var popup = document.querySelector(".popup");
+        var popupClose = document.querySelector(".popup_close");
+        
+            writeToUs.addEventListener("click", function(evt) {
+            popup.classList.add("popup_show");
+           
+        });
+        popupClose.addEventListener("click", function(evt) {
+            popup.classList.remove("popup_show");
+        });
+        
+        
+        
+        var deliveryDisplay = document.querySelector(".delivery_display");
+        var guaranteeDisplay = document.querySelector(".guarantee_display");
+        var loanDisplay = document.querySelector(".loan_display");
+        
+        var serviceDelivery = document.querySelector(".service_delivery");
+        var serviceGuarantee = document.querySelector(".service_guarantee");
+        var serviceLoan = document.querySelector(".service_loan");
+        
+        serviceDelivery.classList.add("service_info_show");
+        deliveryDisplay.classList.add("display_show");
+        
+
+        deliveryDisplay.addEventListener("click", function(evt) {
+            serviceDelivery.classList.add("service_info_show");
+            serviceGuarantee.classList.remove("service_info_show");
+            serviceLoan.classList.remove("service_info_show");
+            deliveryDisplay.classList.add("display_show");
+            guaranteeDisplay.classList.remove("display_show");
+            loanDisplay.classList.remove("display_show");
+        });
+        
+        guaranteeDisplay.addEventListener("click", function(evt) {
+            serviceGuarantee.classList.add("service_info_show");
+            serviceDelivery.classList.remove("service_info_show");
+            serviceLoan.classList.remove("service_info_show");
+            guaranteeDisplay.classList.add("display_show");
+            deliveryDisplay.classList.remove("display_show");
+            loanDisplay.classList.remove("display_show");
+        });
+        
+        loanDisplay.addEventListener("click", function(evt) {
+            serviceLoan.classList.add("service_info_show");
+            serviceDelivery.classList.remove("service_info_show");
+            serviceGuarantee.classList.remove("service_info_show");
+            loanDisplay.classList.add("display_show");
+            deliveryDisplay.classList.remove("display_show");
+            guaranteeDisplay.classList.remove("display_show");
+        });
     </script>
 
 </body>
