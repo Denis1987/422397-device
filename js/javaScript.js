@@ -59,10 +59,12 @@ var popupMap = document.querySelector(".popup_map");
 var popupMapClose = document.querySelector(".popup_close_map");
 
 mapBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popupMap.classList.add("popup_map_show");
 });
 
 popupMapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popupMap.classList.remove("popup_map_show");
 });
 
@@ -72,10 +74,12 @@ var popup = document.querySelector(".popup");
 var popupClose = document.querySelector(".popup_close");
 
 writeToUs.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popup.classList.add("popup_show");
 
 });
 popupClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popup.classList.remove("popup_show");
 });
 
@@ -95,6 +99,7 @@ deliveryDisplay.classList.add("display_show");
 
 
 deliveryDisplay.addEventListener("click", function (evt) {
+    evt.preventDefault();
     serviceDelivery.classList.add("service_info_show");
     serviceGuarantee.classList.remove("service_info_show");
     serviceLoan.classList.remove("service_info_show");
@@ -104,6 +109,7 @@ deliveryDisplay.addEventListener("click", function (evt) {
 });
 
 guaranteeDisplay.addEventListener("click", function (evt) {
+    evt.preventDefault();
     serviceGuarantee.classList.add("service_info_show");
     serviceDelivery.classList.remove("service_info_show");
     serviceLoan.classList.remove("service_info_show");
@@ -113,6 +119,7 @@ guaranteeDisplay.addEventListener("click", function (evt) {
 });
 
 loanDisplay.addEventListener("click", function (evt) {
+    evt.preventDefault();
     serviceLoan.classList.add("service_info_show");
     serviceDelivery.classList.remove("service_info_show");
     serviceGuarantee.classList.remove("service_info_show");
