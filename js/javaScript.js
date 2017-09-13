@@ -3,16 +3,7 @@
 
 
 
-var linkForm = document.querySelector(".search_form");
-var linkInput = document.querySelector(".search_form_header");
-var linkSubmit = document.querySelector(".search_submit");
 
-linkForm.addEventListener("focus", function (evt) {
-    linkInput.classList.add("search_form_header_show");
-    linkSubmit.classList.add("search_submit_show");
-
-
-});
 
 
 
