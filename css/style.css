@@ -123,6 +123,7 @@ html
     margin-left: 57px;
 
     letter-spacing: .014em;
+    text-transform: uppercase;
 
     color: black;
 }
@@ -465,6 +466,8 @@ html
 
 .device_center .logo
 {
+    text-transform: uppercase;
+
     color: black;
 }
 
@@ -1457,6 +1460,7 @@ html
 
     text-decoration: none;
     letter-spacing: .012em;
+    text-transform: uppercase;
 
     color: #ffc600;
 }
@@ -2119,6 +2123,7 @@ html
     text-align: right;
     text-align: left;
     letter-spacing: .23em;
+    text-transform: uppercase;
 }
 
 .inner_main_items
